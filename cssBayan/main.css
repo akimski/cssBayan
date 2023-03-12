@@ -1,3 +1,41 @@
+
+@media only screen and (max-width: 850px) {
+    html {
+        font-size: 0.8px;
+    }
+}
+@media only screen and (max-width: 350px) {
+    html {
+        font-size: 0.6px;
+    }
+}
+
+@media (hover: hover) {
+    .bayan-container:hover .mem {
+        user-select: none;
+    }
+    .bayan-container:hover .mem .line {
+        color: black;
+    }
+    .bayan-container:hover .mem .line .icons {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+@media (hover: hover) {
+    .bayan-container .mem:hover {
+        color: black;
+    }
+    .bayan-container .mem:hover .line .icons .icon {
+        transform: rotate(45deg);
+    }
+    .bayan-container .mem:hover .image-container {
+        grid-template-columns: 1fr;
+        padding-bottom: 15rem;
+    }
+}
+
 html {
     font-size: 1px;
 }
@@ -147,41 +185,4 @@ body {
     .icons
     .icon_cross {
     background-color: #0059d9;
-}
-
-@media only screen and (max-width: 850px) {
-    html {
-        font-size: 0.8px;
-    }
-}
-@media only screen and (max-width: 350px) {
-    html {
-        font-size: 0.6px;
-    }
-}
-
-@media (hover: hover) {
-    .bayan-container:hover .mem {
-        user-select: none;
-    }
-    .bayan-container:hover .mem .line {
-        color: black;
-    }
-    .bayan-container:hover .mem .line .icons {
-        visibility: visible;
-        opacity: 1;
-    }
-}
-
-@media (hover: hover) {
-    .bayan-container .mem:hover {
-        color: black;
-    }
-    .bayan-container .mem:hover .line .icons .icon {
-        transform: rotate(45deg);
-    }
-    .bayan-container .mem:hover .image-container {
-        grid-template-columns: 1fr;
-        padding-bottom: 15rem;
-    }
 }
